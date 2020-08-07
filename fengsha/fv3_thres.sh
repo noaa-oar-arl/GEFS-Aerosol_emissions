@@ -1,9 +1,12 @@
 #!/bin/bash
 
 month=${1}
+res=${2}
 
 #------------------------Set these here -------------
-res='C384'
+#res='C384'
+#res='C96'
+#base_dir=emi_C96
 base_dir=bsmfv3
 directory=${base_dir}/${res}/${month}
 #----------------------------------------------------
@@ -39,8 +42,14 @@ box="-20,3.3,35,36"
 
 echo " MODIFYING MALI 1 --------------------------------------"
 #        1    2    3    4    5    6    7    8    9    10   11   12
-thres="0.34,0.40,0.46,0.35,0.35,0.43,0.45,0.40,0.58,0.50,0.50,0.45,9999.0"
+thres="0.34,0.40,0.45,0.35,0.35,0.44,0.44,0.40,0.58,0.50,0.50,0.45,9999.0"
 box="-16,13.5,19.4,22"
+./modify_latlon_box.py -ut ${thres} -d ${directory} -r $res --latlon_box=$box --barren=False
+
+echo " MODIFYING MALI 2 --------------------------------------"
+#        1    2    3    4    5    6    7    8    9    10   11   12
+thres="0.34,0.40,0.47,0.35,0.35,0.44,0.47,0.40,0.60,0.50,0.50,0.45,9999.0"
+box="-5.4,15.4,0.2,23"
 ./modify_latlon_box.py -ut ${thres} -d ${directory} -r $res --latlon_box=$box --barren=False
 
 # echo " MODIFYING Algeria --------------------------------------"

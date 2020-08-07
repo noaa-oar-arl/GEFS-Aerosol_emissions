@@ -1,6 +1,6 @@
 #!/bin/bash -x 
 
-res='C384'
+res='C96'
 for mon in $(seq -f "%02g" 1 12); do
     for it in 1 2 3 4 5 6; do
 	dir=../../../../soil/${res}/tile${it}
