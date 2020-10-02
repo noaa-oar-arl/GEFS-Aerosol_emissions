@@ -107,7 +107,8 @@
 #  16 Jun 2015 - R. Yantosca - Change units of UV albedo to "percent"
 #EOP
 #------------------------------------------------------------------------------
-#   Input HEMCO Configuration File for CEDS2014 -  P.C. Campbell
+#  04 Aug 2020 - P. Campbell - Initial HEMCO Configuration File for 
+#                              CEDS2017-NEI2016v1-OMI-HTAP2019
 #------------------------------------------------------------------------------
 #BOC
 ###############################################################################
@@ -188,10 +189,10 @@ Cap time shift              : true
     --> GEIA              :       false
     --> LIANG_BROMOCARB   :       false
     --> NEI2005           :       false
-    --> NEI2016Beta       :       false
+    --> NEI2016v1         :       false
     --> RETRO             :       false
     --> SHIP              :       false
-    --> NEI2016Beta_SHIP  :       false
+    --> NEI2016v1_SHIP    :       false
     --> MIX               :       false
     --> STREETS           :       false
     --> VOLCANO           :       false
@@ -258,34 +259,40 @@ Cap time shift              : true
 # --- CEDS ---
 #==============================================================================
 (((CEDS
-0 CEDS_BC__A $ROOT/CEDS/v2018-08/2014/BC-em-anthro_CMIP_CEDS_2014.nc BC_agr 2014/1-12/1/0 C xy kg/m2/s BC -     1 1
-0 CEDS_BC__B $ROOT/CEDS/v2018-08/2014/BC-em-anthro_CMIP_CEDS_2014.nc BC_ene 2014/1-12/1/0 C xy kg/m2/s BC -     1 1
-0 CEDS_BC__C $ROOT/CEDS/v2018-08/2014/BC-em-anthro_CMIP_CEDS_2014.nc BC_ind 2014/1-12/1/0 C xy kg/m2/s BC -     1 1
-0 CEDS_BC__D $ROOT/CEDS/v2018-08/2014/BC-em-anthro_CMIP_CEDS_2014.nc BC_rco 2014/1-12/1/0 C xy kg/m2/s BC -     1 1
-0 CEDS_BC__E $ROOT/CEDS/v2018-08/2014/BC-em-anthro_CMIP_CEDS_2014.nc BC_shp 2014/1-12/1/0 C xy kg/m2/s BC -     1 1
-0 CEDS_BC__F $ROOT/CEDS/v2018-08/2014/BC-em-anthro_CMIP_CEDS_2014.nc BC_slv 2014/1-12/1/0 C xy kg/m2/s BC -     1 1
-0 CEDS_BC__G $ROOT/CEDS/v2018-08/2014/BC-em-anthro_CMIP_CEDS_2014.nc BC_tra 2014/1-12/1/0 C xy kg/m2/s BC -     1 1
-0 CEDS_BC__H $ROOT/CEDS/v2018-08/2014/BC-em-anthro_CMIP_CEDS_2014.nc BC_wst 2014/1-12/1/0 C xy kg/m2/s BC -     1 1
+0 CEDS_BC__A $ROOT/CEDS/v2018-08/2019/BC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_agr_fixtime.nc BC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s BC -     1 1
+0 CEDS_BC__B $ROOT/CEDS/v2018-08/2019/BC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_ene_fixtime.nc BC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s BC -     1 1
+0 CEDS_BC__C $ROOT/CEDS/v2018-08/2019/BC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_ind_fixtime.nc BC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s BC -     1 1
+0 CEDS_BC__D $ROOT/CEDS/v2018-08/2019/BC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_res_com_oth_fixtime.nc BC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s BC -     1 1
+0 CEDS_BC__E $ROOT/CEDS/v2018-08/2019/BC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_road_fixtime.nc BC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s BC -     1 1
+0 CEDS_BC__F $ROOT/CEDS/v2018-08/2019/BC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_shp_fixtime.nc BC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s BC -     1 1
+0 CEDS_BC__G $ROOT/CEDS/v2018-08/2019/BC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_slv_fixtime.nc BC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s BC -     1 1
+0 CEDS_BC__H $ROOT/CEDS/v2018-08/2019/BC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_wst_fixtime.nc BC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s BC -     1 1
 
-0 CEDS_OC__A $ROOT/CEDS/v2018-08/2014/OC-em-anthro_CMIP_CEDS_2014.nc OC_agr 2014/1-12/1/0 C xy kg/m2/s OC -     1 1
-0 CEDS_OC__B $ROOT/CEDS/v2018-08/2014/OC-em-anthro_CMIP_CEDS_2014.nc OC_ene 2014/1-12/1/0 C xy kg/m2/s OC -     1 1
-0 CEDS_OC__C $ROOT/CEDS/v2018-08/2014/OC-em-anthro_CMIP_CEDS_2014.nc OC_ind 2014/1-12/1/0 C xy kg/m2/s OC -     1 1
-0 CEDS_OC__D $ROOT/CEDS/v2018-08/2014/OC-em-anthro_CMIP_CEDS_2014.nc OC_rco 2014/1-12/1/0 C xy kg/m2/s OC -     1 1
-0 CEDS_OC__E $ROOT/CEDS/v2018-08/2014/OC-em-anthro_CMIP_CEDS_2014.nc OC_shp 2014/1-12/1/0 C xy kg/m2/s OC -     1 1
-0 CEDS_OC__F $ROOT/CEDS/v2018-08/2014/OC-em-anthro_CMIP_CEDS_2014.nc OC_slv 2014/1-12/1/0 C xy kg/m2/s OC -     1 1
-0 CEDS_OC__G $ROOT/CEDS/v2018-08/2014/OC-em-anthro_CMIP_CEDS_2014.nc OC_tra 2014/1-12/1/0 C xy kg/m2/s OC -     1 1
-0 CEDS_OC__H $ROOT/CEDS/v2018-08/2014/OC-em-anthro_CMIP_CEDS_2014.nc OC_wst 2014/1-12/1/0 C xy kg/m2/s OC -     1 1
+0 CEDS_OC__A $ROOT/CEDS/v2018-08/2019/OC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_agr_fixtime.nc OC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s OC -     1 1
+0 CEDS_OC__B $ROOT/CEDS/v2018-08/2019/OC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_ene_fixtime.nc OC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s OC -     1 1
+0 CEDS_OC__C $ROOT/CEDS/v2018-08/2019/OC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_ind_fixtime.nc OC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s OC -     1 1
+0 CEDS_OC__D $ROOT/CEDS/v2018-08/2019/OC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_res_com_oth_fixtime.nc OC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s OC -     1 1
+0 CEDS_OC__E $ROOT/CEDS/v2018-08/2019/OC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_road_fixtime.nc OC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s OC -     1 1
+0 CEDS_OC__F $ROOT/CEDS/v2018-08/2019/OC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_shp_fixtime.nc OC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s OC -     1 1
+0 CEDS_OC__G $ROOT/CEDS/v2018-08/2019/OC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_slv_fixtime.nc OC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s OC -     1 1
+0 CEDS_OC__H $ROOT/CEDS/v2018-08/2019/OC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_wst_fixtime.nc OC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s OC -     1 1
 
-0 CEDS_SO2__A $ROOT/CEDS/v2018-08/2014/SO2-em-anthro_CMIP_CEDS_2014.nc SO2_agr 2014/1-12/1/0 C xy kg/m2/s SO2 -     1 1
-0 CEDS_SO2__B $ROOT/CEDS/v2018-08/2014/SO2-em-anthro_CMIP_CEDS_2014.nc SO2_ene 2014/1-12/1/0 C xy kg/m2/s SO2 -     1 1
-0 CEDS_SO2__C $ROOT/CEDS/v2018-08/2014/SO2-em-anthro_CMIP_CEDS_2014.nc SO2_ind 2014/1-12/1/0 C xy kg/m2/s SO2 -     1 1
-0 CEDS_SO2__D $ROOT/CEDS/v2018-08/2014/SO2-em-anthro_CMIP_CEDS_2014.nc SO2_rco 2014/1-12/1/0 C xy kg/m2/s SO2 -     1 1
-0 CEDS_SO2__E $ROOT/CEDS/v2018-08/2014/SO2-em-anthro_CMIP_CEDS_2014.nc SO2_shp 2014/1-12/1/0 C xy kg/m2/s SO2 -      1 1
-0 CEDS_SO2__F $ROOT/CEDS/v2018-08/2014/SO2-em-anthro_CMIP_CEDS_2014.nc SO2_slv 2014/1-12/1/0 C xy kg/m2/s SO2 -     1 1
-0 CEDS_SO2__G $ROOT/CEDS/v2018-08/2014/SO2-em-anthro_CMIP_CEDS_2014.nc SO2_tra 2014/1-12/1/0 C xy kg/m2/s SO2 -     1 1
-0 CEDS_SO2__H $ROOT/CEDS/v2018-08/2014/SO2-em-anthro_CMIP_CEDS_2014.nc SO2_wst 2014/1-12/1/0 C xy kg/m2/s SO2 -     1 1
+0 CEDS_SO2__A $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_agr_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 -     1 1
+0 CEDS_SO2__B $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_ene_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 -     1 1
+0 CEDS_SO2__C $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_ind_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 -     1 1
+0 CEDS_SO2__D $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_res_com_oth_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 -     1 1
+0 CEDS_SO2__E $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_road_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 -     1 1
+0 CEDS_SO2__F $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_shp_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 -     1 1
+0 CEDS_SO2__G $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_slv_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 -     1 1
+0 CEDS_SO2__H $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2020-09-11_gn_201901-201912_wst_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 -     1 1
 )))CEDS
 
+#==============================================================================
+# --- OMI_HTAP_SO2---
+#==============================================================================
+(((OMI_HTAP_SO2
+0 OMI_HTAP_SO2__A $ROOT/OMI_HTAP_SO2/htapv2.2.emisso2.surface.x3600y1800t12.2019.integrate_fixtime.nc4 sanl1 2019/1-12/1/0 C xy kg/m2/s SO2 -     1 1
+)))OMI_HTAP_SO2
 #==============================================================================
 # --- HTAP v2 ---
 #
@@ -306,6 +313,131 @@ Cap time shift              : true
 0 HTAP_PM2.5_TRA    $ROOT/HTAP/v2015-03/PM2.5/EDGAR_HTAP_PM2.5_TRANSPORT.generic.01x01.nc     emi_pm2.5  2008-2010/1-12/1/0 C xy kg/m2/s PM25   1/27/25  1/2 1
 )))HTAP
 
+#==============================================================================
+# --- NEI 2016 (USA) ---
+#==============================================================================
+(((NEI2016v1
+# SURFACE INVENTORY
+#0 NEI2016Beta_SURFACE_SO2    $ROOT/NEI2016Beta/v2019-05-MM/$MM/NEI2016Beta_0.1x0.1_2016$MM_all_monmean.nc        SO2      2016/1-12/1/0 C xy  kg/m2/s  SO2    1007     1 50
+#0 NEI2016Beta_SURFACE_BC   $ROOT/NEI2016Beta/v2019-05-MM/$MM/NEI2016Beta_0.1x0.1_2016$MM_all_monmean.nc          PEC      2016/1-12/1/0 C xy  kg/m2/s  BC     1007     1 50
+#0 NEI2016Beta_SURFACE_OC   $ROOT/NEI2016Beta/v2019-05-MM/$MM/NEI2016Beta_0.1x0.1_2016$MM_all_monmean.nc          POC      2016/1-12/1/0 C xy  kg/m2/s  OC     1007     1 50
+
+# SURFACE AFDUSTADJ INVENTORY
+0 NEI2016v1_AFDUSTADJ_BC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_afdustadj_monmean.nc          PEC      2016/1-12/1/0 C xy  kg/m2/s  BC   1007     1 50
+0 NEI2016v1_AFDUSTADJ_OC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_afdustadj_monmean.nc          POC      2016/1-12/1/0 C xy  kg/m2/s  OC   1007     1 50
+
+# SURFACE AIRPORTS INVENTORY
+0 NEI2016v1_AIRPORTS_SO2    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_airports_monmean.nc          SO2      2016/1-12/1/0 C xy  kg/m2/s  SO2  1007     2 50
+0 NEI2016v1_AIRPORTS_BC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_airports_monmean.nc          PEC      2016/1-12/1/0 C xy  kg/m2/s  BC   1007     2 50
+0 NEI2016v1_AIRPORTS_OC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_airports_monmean.nc          POC      2016/1-12/1/0 C xy  kg/m2/s  OC   1007     2 50
+
+# SURFACE NONROAD INVENTORY
+0 NEI2016v1_NONROAD_SO2    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_nonroad_monmean.nc          SO2      2016/1-12/1/0 C xy  kg/m2/s  SO2  1007     3 50
+0 NEI2016v1_NONROAD_BC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_nonroad_monmean.nc          PEC      2016/1-12/1/0 C xy  kg/m2/s  BC   1007     3 50
+0 NEI2016v1_NONROAD_OC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_nonroad_monmean.nc          POC      2016/1-12/1/0 C xy  kg/m2/s  OC   1007     3 50
+
+# SURFACE NONPT INVENTORY
+0 NEI2016v1_NONPT_SO2    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_nonpt_monmean.nc          SO2      2016/1-12/1/0 C xy  kg/m2/s  SO2  1007     4 50
+0 NEI2016v1_NONPT_BC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_nonpt_monmean.nc          PEC      2016/1-12/1/0 C xy  kg/m2/s  BC   1007     4 50
+0 NEI2016v1_NONPT_OC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_nonpt_monmean.nc          POC      2016/1-12/1/0 C xy  kg/m2/s  OC   1007     4 50
+
+# SURFACE OTHAFDUSTADJ INVENTORY
+0 NEI2016v1_OTHAFDUSTADJ_BC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_othafdustadj_monmean.nc          PEC      2016/1-12/1/0 C xy  kg/m2/s  BC   1007     5 50
+0 NEI2016v1_OTHAFDUSTADJ_OC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_othafdustadj_monmean.nc          POC      2016/1-12/1/0 C xy  kg/m2/s  OC   1007     5 50
+
+# SURFACE OTHPTDUSTADJ INVENTORY
+0 NEI2016v1_OTHPTDUSTADJ_BC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_othptdustadj_monmean.nc          PEC      2016/1-12/1/0 C xy  kg/m2/s  BC   1007     6 50
+0 NEI2016v1_OTHPTDUSTADJ_OC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_othptdustadj_monmean.nc          POC      2016/1-12/1/0 C xy  kg/m2/s  OC   1007     6 50
+
+# SURFACE OTHAR INVENTORY
+0 NEI2016v1_OTHAR_SO2    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_othar_monmean.nc          SO2      2016/1-12/1/0 C xy  kg/m2/s  SO2  1007     7 50
+0 NEI2016v1_OTHAR_BC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_othar_monmean.nc          PEC      2016/1-12/1/0 C xy  kg/m2/s  BC   1007     7 50
+0 NEI2016v1_OTHAR_OC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_othar_monmean.nc          POC      2016/1-12/1/0 C xy  kg/m2/s  OC   1007     7 50
+
+# SURFACE RAIL INVENTORY
+0 NEI2016v1_RAIL_SO2    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_rail_monmean.nc          SO2      2016/1-12/1/0 C xy  kg/m2/s  SO2  1007     8 50
+0 NEI2016v1_RAIL_BC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_rail_monmean.nc          PEC      2016/1-12/1/0 C xy  kg/m2/s  BC   1007     8 50
+0 NEI2016v1_RAIL_OC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_rail_monmean.nc          POC      2016/1-12/1/0 C xy  kg/m2/s  OC   1007     8 50
+
+# SURFACE PTOILGAS INVENTORY (OTHER NON-MAJOR SOURCES)
+0 NEI2016v1_PTOILGAS_SO2    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_ptoilgas_monmean.nc          SO2      2016/1-12/1/0 C xy  kg/m2/s  SO2  1007     9 50
+0 NEI2016v1_PTOILGAS_BC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_ptoilgas_monmean.nc          PEC      2016/1-12/1/0 C xy  kg/m2/s  BC   1007     9 50
+0 NEI2016v1_PTOILGAS_OC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_ptoilgas_monmean.nc          POC      2016/1-12/1/0 C xy  kg/m2/s  OC   1007     9 50
+
+# SURFACE PTNONIPM INVENTORY (OTHER NON-MAJOR SOURCES)
+0 NEI2016v1_PTNONIPM_SO2    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_ptnonipm_monmean.nc          SO2      2016/1-12/1/0 C xy  kg/m2/s  SO2  1007     10 50
+0 NEI2016v1_PTNONIPM_BC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_ptnonipm_monmean.nc          PEC      2016/1-12/1/0 C xy  kg/m2/s  BC   1007     10 50
+0 NEI2016v1_PTNONIPM_OC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_ptnonipm_monmean.nc          POC      2016/1-12/1/0 C xy  kg/m2/s  OC   1007     10 50
+
+# SURFACE ONROAD INVENTORY
+0 NEI2016v1_ONROAD_SO2    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_onroad_monmean.nc          SO2      2016/1-12/1/0 C xy  kg/m2/s  SO2  1007     11 50
+0 NEI2016v1_ONROAD_BC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_onroad_monmean.nc          PEC      2016/1-12/1/0 C xy  kg/m2/s  BC   1007     11 50
+0 NEI2016v1_ONROAD_OC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_onroad_monmean.nc          POC      2016/1-12/1/0 C xy  kg/m2/s  OC   1007     11 50
+
+# SURFACE ONROADCAADJ INVENTORY
+0 NEI2016v1_ONROADCAADJ_SO2    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_onroadcaadj_monmean.nc          SO2      2016/1-12/1/0 C xy  kg/m2/s  SO2  1007     12 50
+0 NEI2016v1_ONROADCAADJ_BC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_onroadcaadj_monmean.nc          PEC      2016/1-12/1/0 C xy  kg/m2/s  BC   1007     12 50
+0 NEI2016v1_ONROADCAADJ_OC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_onroadcaadj_monmean.nc          POC      2016/1-12/1/0 C xy  kg/m2/s  OC   1007     12 50
+
+# SURFACE ONROADCAN INVENTORY
+0 NEI2016v1_ONROADCAN_SO2    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_onroadcan_monmean.nc          SO2      2016/1-12/1/0 C xy  kg/m2/s  SO2  1007     13 50
+0 NEI2016v1_ONROADCAN_BC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_onroadcan_monmean.nc          PEC      2016/1-12/1/0 C xy  kg/m2/s  BC   1007     13 50
+0 NEI2016v1_ONROADCAN_OC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_onroadcan_monmean.nc          POC      2016/1-12/1/0 C xy  kg/m2/s  OC   1007     13 50
+
+# SURFACE ONROADMEX INVENTORY
+0 NEI2016v1_ONROADMEX_SO2    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_onroadmex_monmean.nc          SO2      2016/1-12/1/0 C xy  kg/m2/s  SO2  1007     14 50
+0 NEI2016v1_ONROADMEX_BC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_onroadmex_monmean.nc          PEC      2016/1-12/1/0 C xy  kg/m2/s  BC   1007     14 50
+0 NEI2016v1_ONROADMEX_OC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_onroadmex_monmean.nc          POC      2016/1-12/1/0 C xy  kg/m2/s  OC   1007     14 50
+
+# SURFACE RWC INVENTORY
+0 NEI2016v1_RWC_SO2    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_rwc_monmean.nc          SO2      2016/1-12/1/0 C xy  kg/m2/s  SO2  1007     15 50
+0 NEI2016v1_RWC_BC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_rwc_monmean.nc          PEC      2016/1-12/1/0 C xy  kg/m2/s  BC   1007     15 50
+0 NEI2016v1_RWC_OC     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_rwc_monmean.nc          POC      2016/1-12/1/0 C xy  kg/m2/s  OC   1007     15 50
+
+# ELECTRIC GENERATING UNITS (EGUs)
+0 NEI2016v1_PT_EGU_SO2        $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_ptegu_monmean.nc      SO2      2016/1-12/1/0 C xyz kg/m2/s  SO2  1007     16   50
+0 NEI2016v1_PT_EGU_BC         $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_ptegu_monmean.nc      PEC      2016/1-12/1/0 C xyz kg/m2/s  BC   1007     16   50
+0 NEI2016v1_PT_EGU_OC         $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_ptegu_monmean.nc      POC      2016/1-12/1/0 C xyz kg/m2/s  OC   1007     16   50
+
+# OIL & GAS (Major Sources)
+0 NEI2016v1_PT_OILGAS_SO2     $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_pt_oilgas_monmean.nc   SO2      2016/1-12/1/0 C xyz kg/m2/s  SO2  1007     17   50
+0 NEI2016v1_PT_OILGAS_BC      $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_pt_oilgas_monmean.nc   PEC      2016/1-12/1/0 C xyz kg/m2/s  BC   1007     17   50
+0 NEI2016v1_PT_OILGAS_OC      $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_pt_oilgas_monmean.nc   POC      2016/1-12/1/0 C xyz kg/m2/s  OC   1007     17   50
+
+# OTHER POINT SOURCES
+0 NEI2016v1_PT_OTHPT_SO2      $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_othpt_monmean.nc    SO2      2016/1-12/1/0 C xyz kg/m2/s  SO2  1007     18   50
+0 NEI2016v1_PT_OTHPT_BC       $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_othpt_monmean.nc    PEC      2016/1-12/1/0 C xyz kg/m2/s  BC   1007     18   50
+0 NEI2016v1_PT_OTHPT_OC       $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_othpt_monmean.nc    POC      2016/1-12/1/0 C xyz kg/m2/s  OC   1007     18   50
+
+# NON-EGU INDUSTRIAL STACKS (Major Sources)
+0 NEI2016v1_PT_PTNONIPM_SO2   $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_pt_ptnonipm_monmean.nc SO2      2016/1-12/1/0 C xyz kg/m2/s  SO2  1007     19   50
+0 NEI2016v1_PT_PTNONIPM_BC    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_pt_ptnonipm_monmean.nc PEC      2016/1-12/1/0 C xyz kg/m2/s  BC   1007     19   50
+0 NEI2016v1_PT_PTNONIPM_OC    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_pt_ptnonipm_monmean.nc POC      2016/1-12/1/0 C xyz kg/m2/s  OC   1007     19   50
+)))NEI2016v1
+
+#==============================================================================
+# --- Ship emissions ---
+#
+# ==> In the defaults, ARCTAS SO2 has priority over ICOADS, CORBETT, and HTAP.
+#     This can be ovewritten by EMEP over Europe.
+# ==> For CO and NO, ICOADS has priority.
+# ==> Do not use ship emissions from EDGAR v4.2 since they are lumped with
+#     other non-road transportation (aircraft, rail, etc.) emissions
+# ==> Ship NO emissions are used by PARANOx and the extension number must be
+#     adjusted accordingly. If PARANOx is turned off, set the ExtNr back to
+#     zero.
+#==============================================================================
+(((SHIP
+
+(((NEI2016v1_SHIP
+0 NEI2016v1_PT_C3MARINE_SO2   $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_cmv_c3_12_monmean.nc SO2             2016/1-12/1/0 C xyz kg/m2/s  SO2  1007     20 50
+0 NEI2016v1_PT_C3MARINE_BC    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_cmv_c3_12_monmean.nc PEC             2016/1-12/1/0 C xyz kg/m2/s  BC   1007     20 50
+0 NEI2016v1_PT_C3MARINE_OC    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_cmv_c3_12_monmean.nc POC             2016/1-12/1/0 C xyz kg/m2/s  OC   1007     20 50
+
+0 NEI2016v1_PT_C12MARINE_SO2   $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_cmv_c1c2_12_monmean.nc SO2       2016/1-12/1/0 C xyz kg/m2/s  SO2  1007     21 50
+0 NEI2016v1_PT_C12MARINE_BC    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_cmv_c1c2_12_monmean.nc PEC       2016/1-12/1/0 C xyz kg/m2/s  BC   1007     21 50
+0 NEI2016v1_PT_C12MARINE_OC    $ROOT/NEI2016v1/v2020-07-MM/$MM/NEI2016v1_0.1x0.1_2016$MM_cmv_c1c2_12_monmean.nc POC       2016/1-12/1/0 C xyz kg/m2/s  OC   1007     21 50
+)))NEI2016v1_SHIP
 
 ###############################################################################
 ### NON-EMISSIONS DATA (subsection of BASE EMISSIONS SECTION)
@@ -320,7 +452,7 @@ Cap time shift              : true
 #==============================================================================
 # --- Time zones (offset to UTC) ---
 #==============================================================================
-* TIMEZONES timezones_1x1.nc UTC_OFFSET 2000/1/1/0 C xy count * - 1 1
+* TIMEZONES $ROOT/TIMEZONES/v2015-02/timezones_1x1.nc UTC_OFFSET 2000/1/1/0 C xy count * - 1 1
 
 ### END SECTION BASE EMISSIONS ###
 
@@ -521,6 +653,49 @@ Cap time shift              : true
 114 AEICHC   1.160000e-3 - -  - xy unitless 1
 115 NO2toNO  6.521739e-1 - -  - xy unitless 1
 
+#==============================================================================
+# --- NEI 2005 scale factors ---
+#==============================================================================
+201 VISTAS_SEASON     $ROOT/NEI2005/v2014-09/scaling/Vistas_season.geos.1x1.nc       NOratio      2002/1-12/1/0 C  xy unitless 1
+202 ARP_SEASON        $ROOT/NEI2005/v2014-09/scaling/ARP_season.geos.1x1.nc          NOxrat  1999-2007/1-12/1/0 C  xy unitless 1
+210 NEI99_DOW_NOX     $ROOT/NEI2005/v2014-09/scaling/NEI99.dow.geos.1x1.nc           NOX          1999/1-12/WD/0 C xy unitless 1
+211 NEI99_DOW_CO      $ROOT/NEI2005/v2014-09/scaling/NEI99.dow.geos.1x1.nc           CO           1999/1-12/WD/0 C xy unitless 1
+212 NEI99_DOW_ALK4    $ROOT/NEI2005/v2014-09/scaling/NEI99.dow.geos.1x1.nc           ALK4         1999/1-12/WD/0 C xy unitless 1
+213 NEI99_DOW_ACET    $ROOT/NEI2005/v2014-09/scaling/NEI99.dow.geos.1x1.nc           ACET         1999/1-12/WD/0 C xy unitless 1
+214 NEI99_DOW_MEK     $ROOT/NEI2005/v2014-09/scaling/NEI99.dow.geos.1x1.nc           MEK          1999/1-12/WD/0 C xy unitless 1
+215 NEI99_DOW_PRPE    $ROOT/NEI2005/v2014-09/scaling/NEI99.dow.geos.1x1.nc           PRPE         1999/1-12/WD/0 C xy unitless 1
+216 NEI99_DOW_C3H8    $ROOT/NEI2005/v2014-09/scaling/NEI99.dow.geos.1x1.nc           C3H8         1999/1-12/WD/0 C xy unitless 1
+217 NEI99_DOW_C2H6    $ROOT/NEI2005/v2014-09/scaling/NEI99.dow.geos.1x1.nc           C2H6         1999/1-12/WD/0 C xy unitless 1
+218 NEI99_DOW_SO2     $ROOT/NEI2005/v2014-09/scaling/NEI99.dow.geos.1x1.nc           SO2          1999/1-12/WD/0 C xy unitless 1
+219 NEI99_DOW_SO4     $ROOT/NEI2005/v2014-09/scaling/NEI99.dow.geos.1x1.nc           SO4          1999/1-12/WD/0 C xy unitless 1
+220 NEI99_DOW_MSA     $ROOT/NEI2005/v2014-09/scaling/NEI99.dow.geos.1x1.nc           MSA          1999/1-12/WD/0 C xy unitless 1
+221 NEI99_DOW_BCPI    $ROOT/NEI2005/v2014-09/scaling/NEI99.dow.geos.1x1.nc           BCPI         1999/1-12/WD/0 C xy unitless 1
+222 NEI99_DOW_OCPI    $ROOT/NEI2005/v2014-09/scaling/NEI99.dow.geos.1x1.nc           OCPI         1999/1-12/WD/0 C xy unitless 1
+230 NEI99_SEASON_CO   $ROOT/NEI2005/v2014-09/scaling/NEI99.season.geos.1x1.nc        CO           1999/1-12/1/0 C  xy unitless 1
+231 NEI99_SEASON_ALK4 $ROOT/NEI2005/v2014-09/scaling/NEI99.season.geos.1x1.nc        ALK4         1999/1-12/1/0 C  xy unitless 1
+232 NEI99_SEASON_ACET $ROOT/NEI2005/v2014-09/scaling/NEI99.season.geos.1x1.nc        ACET         1999/1-12/1/0 C  xy unitless 1
+233 NEI99_SEASON_MEK  $ROOT/NEI2005/v2014-09/scaling/NEI99.season.geos.1x1.nc        MEK          1999/1-12/1/0 C  xy unitless 1
+234 NEI99_SEASON_PRPE $ROOT/NEI2005/v2014-09/scaling/NEI99.season.geos.1x1.nc        PRPE         1999/1-12/1/0 C  xy unitless 1
+235 NEI99_SEASON_C3H8 $ROOT/NEI2005/v2014-09/scaling/NEI99.season.geos.1x1.nc        C3H8         1999/1-12/1/0 C  xy unitless 1
+236 NEI99_SEASON_C2H6 $ROOT/NEI2005/v2014-09/scaling/NEI99.season.geos.1x1.nc        C2H6         1999/1-12/1/0 C  xy unitless 1
+237 NEI99_SEASON_SO2  $ROOT/NEI2005/v2014-09/scaling/NEI99.season.geos.1x1.nc        SO2          1999/1-12/1/0 C  xy unitless 1
+238 NEI99_SEASON_SO4  $ROOT/NEI2005/v2014-09/scaling/NEI99.season.geos.1x1.nc        SO4          1999/1-12/1/0 C  xy unitless 1
+239 NEI99_SEASON_MSA  $ROOT/NEI2005/v2014-09/scaling/NEI99.season.geos.1x1.nc        MSA          1999/1-12/1/0 C  xy unitless 1
+240 NEI99_SEASON_BCPI $ROOT/NEI2005/v2014-09/scaling/NEI99.season.geos.1x1.nc        BCPI         1999/1-12/1/0 C  xy unitless 1
+241 NEI99_SEASON_OCPI $ROOT/NEI2005/v2014-09/scaling/NEI99.season.geos.1x1.nc        OCPI         1999/1-12/1/0 C  xy unitless 1
+242 NEI99_SEASON_NH3  0.216/0.418/0.622/0.815/0.982/0.974/1.0/0.9/0.96/0.6/0.28/0.236 -            -             - xy unitless 1
+
+#==============================================================================
+# --- NEI 2016 scale factors ---
+#==============================================================================
+255 NEI2016Beta_SO2_YRSCALE 1.0/1.0/1.0/1.0/1.0/1.0/1.0/1.0               - 2006-2013/1/1/0 C xy 1 1
+256 NEI2016Beta_BC_YRSCALE 1.0/1.0/1.0/1.0/1.0/1.0/1.0/1.0               - 2006-2013/1/1/0 C xy 1 1
+257 NEI2016Beta_OC_YRSCALE 1.0/1.0/1.0/1.0/1.0/1.0/1.0/1.0               - 2006-2013/1/1/0 C xy 1 1
+265 NEI2016Beta_BC2BCPI     0.2                                           - -               - xy 1 1
+266 NEI2016Beta_BC2BCPO     0.8                                           - -               - xy 1 1
+267 NEI2016Beta_OC2OCPI     0.5                                           - -               - xy 1 1
+268 NEI2016Beta_OC2OCPO     0.5                                           - -               - xy 1 1
+
 ### END SECTION SCALE FACTORS ###
 
 ###############################################################################
@@ -532,14 +707,15 @@ Cap time shift              : true
 #==============================================================================
 # Country/region masks
 #==============================================================================
-1000 EMEP_MASK   $ROOT/MASKS/v2014-07/EMEP_mask.geos.1x1.nc            MASK     2000/1/1/0 C xy unitless 1 -30/30/45/70
-1001 MEXICO_MASK $ROOT/MASKS/v2014-07/BRAVO.MexicoMask.generic.1x1.nc  MASK     2000/1/1/0 C xy unitless 1 -118/17/-95/33
-1002 CANADA_MASK $ROOT/MASKS/v2014-07/Canada_mask.geos.1x1.nc          MASK     2000/1/1/0 C xy unitless 1 -141/40/-52/85
-1003 SEASIA_MASK $ROOT/MASKS/v2014-07/SE_Asia_mask.generic.1x1.nc      MASK     2000/1/1/0 C xy unitless 1  60/-12/153/55
-1004 NA_MASK     $ROOT/MASKS/v2014-07/NA_mask.geos.1x1.nc              MASK     2000/1/1/0 C xy unitless 1 -165/10/-40/90
-1005 USA_MASK    $ROOT/MASKS/v2014-07/usa.mask.nei2005.geos.1x1.nc     MASK     2000/1/1/0 C xy unitless 1 -165/10/-40/90
-1006 ASIA_MASK   $ROOT/MASKS/v2014-07/MIX_Asia_mask.generic.025x025.nc MASK     2000/1/1/0 C xy unitless 1 46/-12/180/82
-1007 NEI2016Beta_MASK  $ROOT/MASKS/v2014-07/USA_LANDMASK_NEI2016Beta_0.1x0.1.nc  LANDMASK 2000/1/1/0 C xy 1        1 -140/20/-50/60
+#1000 EMEP_MASK   $ROOT/MASKS/v2014-07/EMEP_mask.geos.1x1.nc            MASK     2000/1/1/0 C xy unitless 1 -30/30/45/70
+#1001 MEXICO_MASK $ROOT/MASKS/v2014-07/BRAVO.MexicoMask.generic.1x1.nc  MASK     2000/1/1/0 C xy unitless 1 -118/17/-95/33
+#1002 CANADA_MASK $ROOT/MASKS/v2014-07/Canada_mask.geos.1x1.nc          MASK     2000/1/1/0 C xy unitless 1 -141/40/-52/85
+#1003 SEASIA_MASK $ROOT/MASKS/v2014-07/SE_Asia_mask.generic.1x1.nc      MASK     2000/1/1/0 C xy unitless 1  60/-12/153/55
+#1004 NA_MASK     $ROOT/MASKS/v2014-07/NA_mask.geos.1x1.nc              MASK     2000/1/1/0 C xy unitless 1 -165/10/-40/90
+#1005 USA_MASK    $ROOT/MASKS/v2014-07/usa.mask.nei2005.geos.1x1.nc     MASK     2000/1/1/0 C xy unitless 1 -165/10/-40/90
+#1006 ASIA_MASK   $ROOT/MASKS/v2014-07/MIX_Asia_mask.generic.025x025.nc MASK     2000/1/1/0 C xy unitless 1 46/-12/180/82
+#1007 NEI2016Beta_MASK  $ROOT/MASKS/v2014-07/USA_LANDMASK_NEI2016Beta_0.1x0.1.nc  LANDMASK 2000/1/1/0 C xy 1        1 -140/20/-50/60
+1007 USA_MASK    $ROOT/MASKS/v2014-07/usa.can.mex.mask.nei2005.geos.1x1.nc     MASK     2000/1/1/0 C xy unitless 1 -165/10/-40/90
 ###1007 NEI2016Beta_MASK  -140/20/-50/60                                        -        2000/1/1/0 C xy 1        1 -140/20/-50/60
 
 ### END SECTION MASKS ###

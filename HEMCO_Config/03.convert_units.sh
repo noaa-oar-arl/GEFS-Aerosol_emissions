@@ -15,10 +15,10 @@ echo $time_num
 for tile_num in "${tiles[@]}"; do
 echo $tile_num
 
-ncap2 -s    SO2_FV3_mole=SO2*5.62e10 output/regrid/HEMCO_sa.diagnostics.${time_num}0000_${tile_num}.nc  output/regrid/HEMCO_sa.diagnostics.${time_num}0000_${tile_num}_convert.nc
-ncap2 -A -s OC_FV3=OC*1e9  output/regrid/HEMCO_sa.diagnostics.${time_num}0000_${tile_num}.nc  output/regrid/HEMCO_sa.diagnostics.${time_num}0000_${tile_num}_convert.nc
-ncap2 -A -s BC_FV3=BC*1e9  output/regrid/HEMCO_sa.diagnostics.${time_num}0000_${tile_num}.nc  output/regrid/HEMCO_sa.diagnostics.${time_num}0000_${tile_num}_convert.nc
-ncap2 -A -s PM25_FV3=PM25*1e9  output/regrid/HEMCO_sa.diagnostics.${time_num}0000_${tile_num}.nc  output/regrid/HEMCO_sa.diagnostics.${time_num}0000_${tile_num}_convert.nc
+ncap2 -s    SO2=SO2*5.62e10 output/regrid/HEMCO_sa.diagnostics.${time_num}0000_${tile_num}.nc  output/regrid/HEMCO_sa.diagnostics.${time_num}0000_${tile_num}_convert.nc
+ncap2 -A -s OC=OC*1e9  output/regrid/HEMCO_sa.diagnostics.${time_num}0000_${tile_num}.nc  output/regrid/HEMCO_sa.diagnostics.${time_num}0000_${tile_num}_convert.nc
+ncap2 -A -s BC=BC*1e9  output/regrid/HEMCO_sa.diagnostics.${time_num}0000_${tile_num}.nc  output/regrid/HEMCO_sa.diagnostics.${time_num}0000_${tile_num}_convert.nc
+ncap2 -A -s PM25=PM25*1e9  output/regrid/HEMCO_sa.diagnostics.${time_num}0000_${tile_num}.nc  output/regrid/HEMCO_sa.diagnostics.${time_num}0000_${tile_num}_convert.nc
 
 done
 done

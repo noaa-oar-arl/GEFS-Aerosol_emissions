@@ -2,4 +2,15 @@
 # Dates must have format YYYY-MM-DD HH:MM:SS
 START:   2019-01-01 00:00:00
 END:     2019-12-31 00:00:00
+#Hourly
+#TS_EMIS: 3600
+#Daily
+#TS_EMIS: 86400
+#31 Day Month
 TS_EMIS: 2678400
+#30 Day Month
+#TS_EMIS: 2592000
+#29 Day Month
+#TS_EMIS: 250500
+#28 Day Month
+#TS_EMIS: 2419200
