@@ -2,3 +2,8 @@
 
 This repository houses the ARL emission dataset and scripts for the C384 emissions
 for the GEFS-Aerosol model.  
+
+
+This branch contains the emissions for FV3 at the C96 and C384 resolutions
+
+Note that this branch is for the CEDS2019+HTAP emissions with the SOILGRIDS2019 soil dataset
