@@ -1,0 +1,71 @@
+#!/bin/bash
+
+path='/scratch2/NAGAPE/arl/Barry.Baker/emissions/FENGSHA'
+
+orig='FENGSHA_DUST_INPUTS_v0.2.2.nc'
+final='FENGSHA_DUST_INPUTS_v0.2.3.nc'
+
+#-------------------------------------------------------
+# SOILGRIDS 2019
+#-------------------------------------------------------
+
+orig='FENGSHA_DUST_INPUTS_v0.2.2.nc'
+final='FENGSHA_DUST_INPUTS_v0.2.3.nc'
+
+# global                                                #  1    2    3    4    5    6    7    8    9   10   11   12
+python -W ignore change_threshold.py -f $path/$orig -ut "0.34,0.47,0.42,0.42,0.35,0.38,0.40,0.30,0.40,0.35,0.40,0.42,9999" -o tmp1.nc
+
+#kansas                                             #  1    2    3    4    5    6    7    8    9   10   11   12
+python -W ignore change_threshold.py -f tmp1.nc -ut "0.34,0.47,0.32,0.36,0.55,0.38,0.37,0.16,0.19,0.45,0.45,0.35,9999" -o tmp2.nc --latlon_box="-102,36.9,-98.7,41"
+
+#colorado                                           #  1    2    3    4    5    6    7    8    9   10   11   12
+python -W ignore change_threshold.py -f tmp2.nc -ut "0.34,0.47,0.32,0.36,0.55,0.30,0.25,0.20,0.19,0.45,0.45,0.35,9999" -o tmp3.nc --latlon_box="-105.5,36.9,-102,41"
+
+#eastern mexico                                     #  1    2    3    4    5    6    7    8    9   10   11   12
+python -W ignore change_threshold.py -f tmp3.nc -ut "0.34,0.47,0.33,0.60,0.55,0.42,0.58,0.32,0.55,0.55,0.55,0.55,9999" -o tmp4.nc --latlon_box="-101,22,-96,27"
+
+ # Chihuahuan desert                                #  1    2    3    4    5    6    7    8    9   10  11   12
+python -W ignore change_threshold.py -f tmp4.nc -ut "0.34,0.47,0.42,0.60,0.55,0.42,0.59,0.36,0.58,0.45,0.45,0.55,9999" -o tmp5.nc --latlon_box="-108,30.18,-105,33.41"
+
+# phoenix                                           #  1    2    3    4    5    6    7    8    9   10   11   12
+python -W ignore change_threshold.py -f tmp5.nc -ut "0.34,0.47,0.28,0.60,0.55,0.25,0.40,0.32,0.20,0.45,0.45,0.35,9999" -o tmp6.nc --latlon_box="-112.7,33.5,-111.5,35"
+
+# taklamakan
+python -W ignore change_threshold.py -f tmp6.nc -ut "0.34,0.47,0.42,0.42,0.35,0.38,0.40,0.30,0.40,0.35,0.40,0.42,9999" -o tmp7.nc
+
+mv tmp7.nc $path/$final
+
+rm tmp?.nc
+
+
+# #-------------------------------------------------------
+# # Comment above for SOILGRIDS 2017 and uncomment below
+# #-------------------------------------------------------
+
+# orig='FENGSHA_DUST_INPUTS_v0.2.2.nc'
+# final='FENGSHA_DUST_INPUTS_v0.2.3.nc'
+
+# # global                                                #  1    2    3    4    5    6    7    8    9   10   11   12
+# python -W ignore change_threshold.py -f $path/$orig -ut "0.065,0.18,0.27,0.36,0.35,0.38,0.45,0.30,0.45,0.35,0.40,0.41,9999" -o tmp1.nc
+
+# #kansas                          #  1    2    3    4    5    6    7    8    9   10   11   12
+# python -W ignore change_threshold.py -f tmp1.nc -ut "0.34,0.47,0.32,0.36,0.55,0.38,0.37,0.16,0.19,0.45,0.45,0.35,9999" -o tmp2.nc --latlon_box="-102,36.9,-98.7,41"
+
+# #colorado                        #  1    2    3    4    5    6    7    8    9   10   11   12
+# python -W ignore change_threshold.py -f tmp2.nc -ut "0.34,0.47,0.32,0.36,0.55,0.30,0.25,0.20,0.19,0.45,0.45,0.35,9999" -o tmp3.nc --latlon_box="-105.5,36.9,-102,41"
+
+# #eastern mexico                  #  1    2    3    4    5    6    7    8    9   10   11   12
+# python -W ignore change_threshold.py -f tmp3.nc -ut "0.34,0.47,0.33,0.60,0.55,0.42,0.58,0.32,0.55,0.55,0.55,0.55,9999" -o tmp4.nc --latlon_box="-101,22,-96,27"
+
+#  # Chihuahuan desert              #  1    2    3    4    5    6    7    8    9   10  11   12
+# python -W ignore change_threshold.py -f tmp4.nc -ut "0.34,0.47,0.42,0.60,0.55,0.42,0.59,0.36,0.58,0.45,0.45,0.55,9999" -o tmp5.nc --latlon_box="-108,30.18,-105,33.41"
+
+# # phoenix                        #  1    2    3    4    5    6    7    8    9   10   11   12
+# python -W ignore change_threshold.py -f tmp5.nc -ut "0.34,0.47,0.28,0.60,0.55,0.25,0.40,0.32,0.20,0.45,0.45,0.35,9999" -o tmp6.nc --latlon_box="-112.7,33.5,-111.5,35"
+
+# # taklamakan
+# python -W ignore change_threshold.py -f tmp6.nc -ut "0.34,0.47,0.42,0.42,0.35,0.38,0.40,0.30,0.40,0.35,0.40,0.42,9999" -o tmp7.nc
+
+# mv tmp7.nc $path/$final
+
+# rm tmp?.nc
