@@ -439,7 +439,7 @@ Cap time shift              : true
 # --- temporary scale factors for comparisons
 #==============================================================================
 9991 SO2_Scale_Factor 2.0  - - - xy unitless 1
-9992 SO2_Bias_MASK_2019 $ROOT/MASKS/v2018-09/HEMCO_sa.diagnostics.2019_Oct-Nov_CEDS2019_OMIHTAP2019_NEI2016_scale_1e11.nc SO2_frac_emis 2019/1/1/0 C xy unitless 1 -180/-90/180/90
+9992 SO2_Bias_MASK_2019 $ROOT/MASKS/v2018-09/HEMCO_sa.diagnostics.2019$MM_CEDS2019_OMI-HTAP2019_NEI2016v1_Scale_1e11.nc SO2_frac_emis 2019/1/1/0 C xy unitless 1 -180/-90/180/90
 
 919 NO_ratio $ROOT/AnnualScalar/v2014-07/NO_ratio_2005_2002.nc NOXscalar 2005/1/1/0 C xy unitless 1
 918 CO_ratio $ROOT/AnnualScalar/v2014-07/CO_ratio_2005_1985.nc COscalar 2005/1/1/0 C xy unitless 1
