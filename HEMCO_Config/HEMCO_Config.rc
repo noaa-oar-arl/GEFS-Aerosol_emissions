@@ -115,7 +115,7 @@
 ### BEGIN SECTION SETTINGS
 ###############################################################################
 
-ROOT                        : /scratch/pcampbe8/emissions/hemco
+ROOT                        : /groups/ESS/pcampbe8/emissions/hemco
 GridFile                    : HEMCO_sa_Grid.rc
 SpecFile                    : HEMCO_sa_Spec.rc
 TimeFile                    : HEMCO_sa_Time.rc
@@ -277,14 +277,14 @@ Cap time shift              : true
 0 CEDS_POC__G $ROOT/CEDS/v2018-08/2019/OC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_slv_fixtime.nc OC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s OC -     1 1
 0 CEDS_POC__H $ROOT/CEDS/v2018-08/2019/OC-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_wst_fixtime.nc OC_em_anthro 2019/1-12/1/0 C xyz kg/m2/s OC -     1 1
 
-0 CEDS_SO2__A $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_agr_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 -     1 1
-0 CEDS_SO2__B $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_ene_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 -     1 1
-0 CEDS_SO2__C $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_ind_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 -     1 1
-0 CEDS_SO2__D $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_res_com_oth_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 -     1 1
-0 CEDS_SO2__E $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_road_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 -     1 1
-0 CEDS_SO2__F $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_shp_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 -     1 1
-0 CEDS_SO2__G $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_slv_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 -     1 1
-0 CEDS_SO2__H $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_wst_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 -     1 1
+0 CEDS_SO2__A $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_agr_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 9991/9992     1 1
+0 CEDS_SO2__B $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_ene_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 9991/9992     1 1
+0 CEDS_SO2__C $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_ind_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 9991/9992     1 1
+0 CEDS_SO2__D $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_res_com_oth_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 9991/9992     1 1
+0 CEDS_SO2__E $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_road_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 9991/9992     1 1
+0 CEDS_SO2__F $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_shp_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 9991/9992     1 1
+0 CEDS_SO2__G $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_slv_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 9991/9992     1 1
+0 CEDS_SO2__H $ROOT/CEDS/v2018-08/2019/SO2-em-anthro_input4MIPs_emissions_CMIP_CEDS-2021-02-05_gn_201901-201912_wst_fixtime.nc SO2_em_anthro 2019/1-12/1/0 C xyz kg/m2/s SO2 9991/9992     1 1
 )))CEDS
 
 #==============================================================================
@@ -364,6 +364,9 @@ Cap time shift              : true
 #==============================================================================
 # --- temporary scale factors for comparisons
 #==============================================================================
+9991 CEDS_SO2X2 1.0  - - - xy unitless 1
+9992 SO2_Bias_MASK_2021 $ROOT/MASKS/v2018-09/HEMCO_sa.diagnostics.2021$MM.nc SO2_frac_emis 2021/1/1/0 C xy unitless 1 -180/-90/180/90
+
 919 NO_ratio $ROOT/AnnualScalar/v2014-07/NO_ratio_2005_2002.nc NOXscalar 2005/1/1/0 C xy unitless 1
 918 CO_ratio $ROOT/AnnualScalar/v2014-07/CO_ratio_2005_1985.nc COscalar 2005/1/1/0 C xy unitless 1
 
@@ -581,7 +584,7 @@ Cap time shift              : true
 #1003 SEASIA_MASK $ROOT/MASKS/v2014-07/SE_Asia_mask.generic.1x1.nc      MASK     2000/1/1/0 C xy unitless 1  60/-12/153/55
 #1004 NA_MASK     $ROOT/MASKS/v2014-07/NA_mask.geos.1x1.nc              MASK     2000/1/1/0 C xy unitless 1 -165/10/-40/90
 #1005 USA_MASK    $ROOT/MASKS/v2014-07/usa.mask.nei2005.geos.1x1.nc     MASK     2000/1/1/0 C xy unitless 1 -165/10/-40/90
-#1006 ASIA_MASK   $ROOT/MASKS/v2014-07/MIX_Asia_mask.generic.025x025.nc MASK     2000/1/1/0 C xy unitless 1 46/-12/180/82
+1006 ASIA_MASK   $ROOT/MASKS/v2014-07/MIX_Asia_mask.generic.025x025.nc MASK     2000/1/1/0 C xy unitless 1 46/-12/180/82
 #1007 NEI2016Beta_MASK  $ROOT/MASKS/v2014-07/USA_LANDMASK_NEI2016Beta_0.1x0.1.nc  LANDMASK 2000/1/1/0 C xy 1        1 -140/20/-50/60
 1007 USA_MASK    $ROOT/MASKS/v2014-07/usa.can.mex.mask.nei2005.geos.1x1.nc     MASK     2000/1/1/0 C xy unitless 1 -165/10/-40/90
 ###1007 NEI2016Beta_MASK  -140/20/-50/60                                        -        2000/1/1/0 C xy 1        1 -140/20/-50/60
