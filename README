@@ -1,9 +1,6 @@
 # GEFS-Aerosol Emissions
 
-This repository houses the ARL emission dataset and scripts for the C384 emissions
-for the GEFS-Aerosol model. 
-
-This repository houses the ARL emission dataset and scripts for the C96 C384 emissions
+This repository houses the ARL emission dataset and scripts for the C96 and C384 emissions
 for the GEFS-Aerosol model.  
 
-This set is bias scaled for SO2 emissions (only major sources) based on the 2021 Fixed GEFS-Aerosol Sulfate AOD bias.
+This set is bias scaled for SO2 emissions (only major sources) based on the 2021 Fixed GEFS-Aerosol Sulfate AOD-MERRA2 bias.
